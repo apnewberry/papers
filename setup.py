@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 import versioneer
 
 setup(name='papers',
@@ -11,6 +11,5 @@ setup(name='papers',
       packages=['papers'],
       scripts=['scripts/papers'],
       license = "MIT",
-      requires = ["bibtexparser","crossrefapi","fuzzywuzzy", "unidecode", "scholarly", "six"],
-      )
-
+      install_requires = ["bibtexparser","crossrefapi","fuzzywuzzy", "unidecode", "scholarly", "six"],
+)
